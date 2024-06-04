@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using ToDoWebApp.Server.Classes;
 
 namespace ToDoWebApp.Server.Controllers
 {
@@ -8,7 +9,7 @@ namespace ToDoWebApp.Server.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching", "WTF"
         };
 
         private readonly ILogger<WeatherForecastController> _logger;

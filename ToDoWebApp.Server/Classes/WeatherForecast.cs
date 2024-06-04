@@ -1,4 +1,4 @@
-namespace ToDoWebApp.Server
+namespace ToDoWebApp.Server.Classes
 {
     public class WeatherForecast
     {
