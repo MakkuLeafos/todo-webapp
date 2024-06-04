@@ -1,5 +1,5 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 interface WeatherForecast {
   date: string;
@@ -9,14 +9,15 @@ interface WeatherForecast {
 }
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  selector: 'app-weatherforecast',
+  templateUrl: './weatherforecast.component.html',
+  styleUrl: './weatherforecast.component.css'
 })
-export class AppComponent implements OnInit {
+export class WeatherforcastComponent implements OnInit {
+
   public forecasts: WeatherForecast[] = [];
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
     this.getForecasts();
@@ -32,6 +33,4 @@ export class AppComponent implements OnInit {
       }
     );
   }
-
-  title = 'todowebapp.client';
 }

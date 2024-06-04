@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Git Repos\\ToDoWebApp\\todo-webapp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EBD0942A-6C89-4258-A013-C4377DCE83B7}|todowebapp.client\\todowebapp.client.esproj|c:\\git repos\\todowebapp\\todo-webapp\\todowebapp.client\\src\\app\\components\\weatherforecast\\weatherforecast.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{EBD0942A-6C89-4258-A013-C4377DCE83B7}|todowebapp.client\\todowebapp.client.esproj|solutionrelative:todowebapp.client\\src\\app\\components\\weatherforecast\\weatherforecast.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EBD0942A-6C89-4258-A013-C4377DCE83B7}|todowebapp.client\\todowebapp.client.esproj|c:\\git repos\\todowebapp\\todo-webapp\\todowebapp.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{EBD0942A-6C89-4258-A013-C4377DCE83B7}|todowebapp.client\\todowebapp.client.esproj|solutionrelative:todowebapp.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBD0942A-6C89-4258-A013-C4377DCE83B7}|todowebapp.client\\todowebapp.client.esproj|c:\\git repos\\todowebapp\\todo-webapp\\todowebapp.client\\src\\app\\components\\weatherforecast\\app.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{EBD0942A-6C89-4258-A013-C4377DCE83B7}|todowebapp.client\\todowebapp.client.esproj|solutionrelative:todowebapp.client\\src\\app\\components\\weatherforecast\\app.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{EBD0942A-6C89-4258-A013-C4377DCE83B7}|todowebapp.client\\todowebapp.client.esproj|c:\\git repos\\todowebapp\\todo-webapp\\todowebapp.client\\src\\app\\app-routing.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{EBD0942A-6C89-4258-A013-C4377DCE83B7}|todowebapp.client\\todowebapp.client.esproj|solutionrelative:todowebapp.client\\src\\app\\app-routing.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5A4DA12-8E06-46A1-A07E-C1D1C6334853}|ToDoWebApp.Server\\ToDoWebApp.Server.csproj|c:\\git repos\\todowebapp\\todo-webapp\\todowebapp.server\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5A4DA12-8E06-46A1-A07E-C1D1C6334853}|ToDoWebApp.Server\\ToDoWebApp.Server.csproj|solutionrelative:todowebapp.server\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EBD0942A-6C89-4258-A013-C4377DCE83B7}|todowebapp.client\\todowebapp.client.esproj|c:\\git repos\\todowebapp\\todo-webapp\\todowebapp.client\\src\\app\\components\\root\\app.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBD0942A-6C89-4258-A013-C4377DCE83B7}|todowebapp.client\\todowebapp.client.esproj|solutionrelative:todowebapp.client\\src\\app\\components\\root\\app.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -31,40 +35,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "app.component.ts",
-              "DocumentMoniker": "C:\\Git Repos\\ToDoWebApp\\todo-webapp\\todowebapp.client\\src\\app\\components\\WeatherForecast\\app.component.ts",
-              "RelativeDocumentMoniker": "todowebapp.client\\src\\app\\components\\WeatherForecast\\app.component.ts",
-              "ToolTip": "C:\\Git Repos\\ToDoWebApp\\todo-webapp\\todowebapp.client\\src\\app\\components\\WeatherForecast\\app.component.ts",
-              "RelativeToolTip": "todowebapp.client\\src\\app\\components\\WeatherForecast\\app.component.ts",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-06-04T18:55:52.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "app.module.ts",
               "DocumentMoniker": "C:\\Git Repos\\ToDoWebApp\\todo-webapp\\todowebapp.client\\src\\app\\app.module.ts",
               "RelativeDocumentMoniker": "todowebapp.client\\src\\app\\app.module.ts",
               "ToolTip": "C:\\Git Repos\\ToDoWebApp\\todo-webapp\\todowebapp.client\\src\\app\\app.module.ts",
               "RelativeToolTip": "todowebapp.client\\src\\app\\app.module.ts",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA6AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-06-04T18:55:45.971Z",
+              "WhenOpened": "2024-06-04T21:17:24.807Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Git Repos\\ToDoWebApp\\todo-webapp\\ToDoWebApp.Server\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "ToDoWebApp.Server\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Git Repos\\ToDoWebApp\\todo-webapp\\ToDoWebApp.Server\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "ToDoWebApp.Server\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAB0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T18:53:26.397Z",
+              "Title": "app-routing.module.ts",
+              "DocumentMoniker": "C:\\Git Repos\\ToDoWebApp\\todo-webapp\\todowebapp.client\\src\\app\\app-routing.module.ts",
+              "RelativeDocumentMoniker": "todowebapp.client\\src\\app\\app-routing.module.ts",
+              "ToolTip": "C:\\Git Repos\\ToDoWebApp\\todo-webapp\\todowebapp.client\\src\\app\\app-routing.module.ts",
+              "RelativeToolTip": "todowebapp.client\\src\\app\\app-routing.module.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-06-04T21:17:23.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "weatherforecast.component.ts",
+              "DocumentMoniker": "C:\\Git Repos\\ToDoWebApp\\todo-webapp\\todowebapp.client\\src\\app\\components\\weatherforecast\\weatherforecast.component.ts",
+              "RelativeDocumentMoniker": "todowebapp.client\\src\\app\\components\\weatherforecast\\weatherforecast.component.ts",
+              "ToolTip": "C:\\Git Repos\\ToDoWebApp\\todo-webapp\\todowebapp.client\\src\\app\\components\\weatherforecast\\weatherforecast.component.ts",
+              "RelativeToolTip": "todowebapp.client\\src\\app\\components\\weatherforecast\\weatherforecast.component.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-06-04T20:15:14.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "app.component.html",
+              "DocumentMoniker": "C:\\Git Repos\\ToDoWebApp\\todo-webapp\\todowebapp.client\\src\\app\\components\\root\\app.component.html",
+              "RelativeDocumentMoniker": "todowebapp.client\\src\\app\\components\\root\\app.component.html",
+              "ToolTip": "C:\\Git Repos\\ToDoWebApp\\todo-webapp\\todowebapp.client\\src\\app\\components\\root\\app.component.html",
+              "RelativeToolTip": "todowebapp.client\\src\\app\\components\\root\\app.component.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-06-04T20:11:09.847Z",
               "EditorCaption": ""
             }
           ]
