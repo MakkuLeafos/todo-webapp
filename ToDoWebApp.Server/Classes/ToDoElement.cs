@@ -85,7 +85,6 @@
         //    toDoDueDate=dueDate;
         //}
 
-        public int ToDoID { get; set; }
         public string ToDoName { get; set; }
         public string? ToDoDescription { get; set; }
         public string? ToDoDueDate { get; set; }

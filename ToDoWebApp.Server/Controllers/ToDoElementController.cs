@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ToDoWebApp.Server.Classes;
+using ToDoWebApp.Server.Services;
 
 namespace ToDoWebApp.Server.Controllers
 {
@@ -7,54 +8,52 @@ namespace ToDoWebApp.Server.Controllers
     [Route("api/[controller]")]
     public class ToDoElementController : ControllerBase
     {
-        private List<ToDoElement>? toDolist;
+        private readonly IToDoListService _toDoListService;
 
-        private readonly ILogger<ToDoElementController> _logger;
-
-        public ToDoElementController(ILogger<ToDoElementController> logger)
+        public ToDoElementController(IToDoListService toDoListService)
         {
-            _logger = logger;
+            _toDoListService = toDoListService;
         }
 
         [HttpGet]
-        public IEnumerable<ToDoElement> Get()
+        public List<ToDoElement> Get()
         {
-            toDolist = new List<ToDoElement>();
-            GenerateTestData();
-            var output = toDolist.ToArray();
-            return output;
+            //GenerateTestData();
+            return _toDoListService.GetList();
         }
 
         private void GenerateTestData()
         {
-            if (toDolist != null)
+            if (_toDoListService.GetList() != null)
             {
-                toDolist.Add(new ToDoElement()
+                _toDoListService.AddToDoElement(new ToDoElement()
                 {
-                    ToDoID = 1,
                     ToDoName = "Task 1",
                     ToDoDescription = "Task 1 Desc.",
                     ToDoDueDate = DateTime.Now.ToString("dd.MM.yyyy")
                 }
                 );
 
-                toDolist.Add(new ToDoElement()
+                _toDoListService.AddToDoElement(new ToDoElement()
                 {
-                    ToDoID = 2,
                     ToDoName = "Task 2",
                     ToDoDescription = "",
                     ToDoDueDate = DateTime.Now.ToString("dd.MM.yyyy")
                 }
                 );
 
-                toDolist.Add(new ToDoElement()
+                _toDoListService.AddToDoElement(new ToDoElement()
                 {
-                    ToDoID = 3,
                     ToDoName = "Task 1",
                     ToDoDescription = "Task 3 Desc."
                 }
                 );
             }
+        }
+        [HttpPost]
+        public void Post([FromBody] ToDoElement newToDo)
+        {
+            _toDoListService.AddToDoElement(newToDo);
         }
     }
 }

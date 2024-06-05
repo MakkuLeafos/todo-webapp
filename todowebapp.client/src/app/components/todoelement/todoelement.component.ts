@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 interface ToDoElement {
-  id: number;
   toDoName: string;
   toDoDescription: string;
-  toDoDueDate: Date;
+  toDoDueDate: string;
 }
 
 @Component({
@@ -19,13 +19,26 @@ export class TodoelementComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit(){
-    this.getToDoElements();
+    //this.getToDoElements();
   }
 
   getToDoElements() {
     this.http.get<ToDoElement[]>('/api/todoelement').subscribe(
       (result) => {
         this.todoelements = result
+      },
+      (error) => {
+        console.error(error);
+      }
+    );
+  }
+
+  createNewToDo()
+  {
+    var newElement = <ToDoElement>{ toDoName:"Test", toDoDescription:"Test description", toDoDueDate: "Test date"};
+    return this.http.post<ToDoElement>('/api/todoelement', newElement).subscribe(
+      (response: ToDoElement) => {
+        this.getToDoElements();
       },
       (error) => {
         console.error(error);
