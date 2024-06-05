@@ -13,7 +13,7 @@ interface WeatherForecast {
   templateUrl: './weatherforecast.component.html',
   styleUrl: './weatherforecast.component.css'
 })
-export class WeatherforcastComponent implements OnInit {
+export class WeatherforecastComponent implements OnInit {
 
   public forecasts: WeatherForecast[] = [];
 
