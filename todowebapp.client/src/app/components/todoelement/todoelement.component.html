@@ -17,7 +17,7 @@
         <td>{{ todoelement.toDoName}}</td>
         <td>{{ todoelement.toDoDescription}}</td>
         <td>{{ todoelement.toDoDueDate}}</td>
-        <td><button (click)="deleteToDoItem(todoelement.toDoId)">Löschen</button></td>
+        <td><button (click)="deleteToDoItem(todoelement.toDoId)">Löschen</button><button (click)="editToDoItem(todoelement.toDoId)">Bearbeiten</button></td>
       </tr>
     </tbody>
   </table>

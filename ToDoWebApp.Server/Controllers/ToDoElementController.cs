@@ -33,5 +33,11 @@ namespace ToDoWebApp.Server.Controllers
         {
             _toDoListService.DeleteToDoElement(deleteId);
         }
+
+        [HttpPut("{editId}")]
+        public void EditItem(int editId, [FromBody]ToDoElement updatedElement) 
+        {
+            _toDoListService.EditToDoElement(editId,updatedElement);
+        }
     }
 }
