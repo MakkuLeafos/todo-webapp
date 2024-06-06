@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Git Repos\\ToDoWebApp\\todo-webapp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EBD0942A-6C89-4258-A013-C4377DCE83B7}|todowebapp.client\\todowebapp.client.esproj|c:\\git repos\\todowebapp\\todo-webapp\\todowebapp.client\\src\\app\\components\\todoelement\\todoelement.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{EBD0942A-6C89-4258-A013-C4377DCE83B7}|todowebapp.client\\todowebapp.client.esproj|solutionrelative:todowebapp.client\\src\\app\\components\\todoelement\\todoelement.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBD0942A-6C89-4258-A013-C4377DCE83B7}|todowebapp.client\\todowebapp.client.esproj|c:\\git repos\\todowebapp\\todo-webapp\\todowebapp.client\\src\\app\\components\\todoelement\\todoelement.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBD0942A-6C89-4258-A013-C4377DCE83B7}|todowebapp.client\\todowebapp.client.esproj|solutionrelative:todowebapp.client\\src\\app\\components\\todoelement\\todoelement.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A4DA12-8E06-46A1-A07E-C1D1C6334853}|ToDoWebApp.Server\\ToDoWebApp.Server.csproj|c:\\git repos\\todowebapp\\todo-webapp\\todowebapp.server\\controllers\\todoelementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A4DA12-8E06-46A1-A07E-C1D1C6334853}|ToDoWebApp.Server\\ToDoWebApp.Server.csproj|solutionrelative:todowebapp.server\\controllers\\todoelementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5A4DA12-8E06-46A1-A07E-C1D1C6334853}|ToDoWebApp.Server\\ToDoWebApp.Server.csproj|c:\\git repos\\todowebapp\\todo-webapp\\todowebapp.server\\services\\todolistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5A4DA12-8E06-46A1-A07E-C1D1C6334853}|ToDoWebApp.Server\\ToDoWebApp.Server.csproj|solutionrelative:todowebapp.server\\services\\todolistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBD0942A-6C89-4258-A013-C4377DCE83B7}|todowebapp.client\\todowebapp.client.esproj|c:\\git repos\\todowebapp\\todo-webapp\\todowebapp.client\\src\\app\\components\\root\\app.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBD0942A-6C89-4258-A013-C4377DCE83B7}|todowebapp.client\\todowebapp.client.esproj|solutionrelative:todowebapp.client\\src\\app\\components\\root\\app.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "app.component.html",
+              "DocumentMoniker": "C:\\Git Repos\\ToDoWebApp\\todo-webapp\\todowebapp.client\\src\\app\\components\\root\\app.component.html",
+              "RelativeDocumentMoniker": "todowebapp.client\\src\\app\\components\\root\\app.component.html",
+              "ToolTip": "C:\\Git Repos\\ToDoWebApp\\todo-webapp\\todowebapp.client\\src\\app\\components\\root\\app.component.html",
+              "RelativeToolTip": "todowebapp.client\\src\\app\\components\\root\\app.component.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-06-06T00:37:59.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ToDoListService.cs",
+              "DocumentMoniker": "C:\\Git Repos\\ToDoWebApp\\todo-webapp\\ToDoWebApp.Server\\Services\\ToDoListService.cs",
+              "RelativeDocumentMoniker": "ToDoWebApp.Server\\Services\\ToDoListService.cs",
+              "ToolTip": "C:\\Git Repos\\ToDoWebApp\\todo-webapp\\ToDoWebApp.Server\\Services\\ToDoListService.cs",
+              "RelativeToolTip": "ToDoWebApp.Server\\Services\\ToDoListService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T22:33:16.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ToDoElementController.cs",
+              "DocumentMoniker": "C:\\Git Repos\\ToDoWebApp\\todo-webapp\\ToDoWebApp.Server\\Controllers\\ToDoElementController.cs",
+              "RelativeDocumentMoniker": "ToDoWebApp.Server\\Controllers\\ToDoElementController.cs",
+              "ToolTip": "C:\\Git Repos\\ToDoWebApp\\todo-webapp\\ToDoWebApp.Server\\Controllers\\ToDoElementController.cs",
+              "RelativeToolTip": "ToDoWebApp.Server\\Controllers\\ToDoElementController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T22:52:48.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "todoelement.component.html",
+              "DocumentMoniker": "C:\\Git Repos\\ToDoWebApp\\todo-webapp\\todowebapp.client\\src\\app\\components\\todoelement\\todoelement.component.html",
+              "RelativeDocumentMoniker": "todowebapp.client\\src\\app\\components\\todoelement\\todoelement.component.html",
+              "ToolTip": "C:\\Git Repos\\ToDoWebApp\\todo-webapp\\todowebapp.client\\src\\app\\components\\todoelement\\todoelement.component.html",
+              "RelativeToolTip": "todowebapp.client\\src\\app\\components\\todoelement\\todoelement.component.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-06-04T21:56:12.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "todoelement.component.ts",
+              "DocumentMoniker": "C:\\Git Repos\\ToDoWebApp\\todo-webapp\\todowebapp.client\\src\\app\\components\\todoelement\\todoelement.component.ts",
+              "RelativeDocumentMoniker": "todowebapp.client\\src\\app\\components\\todoelement\\todoelement.component.ts",
+              "ToolTip": "C:\\Git Repos\\ToDoWebApp\\todo-webapp\\todowebapp.client\\src\\app\\components\\todoelement\\todoelement.component.ts",
+              "RelativeToolTip": "todowebapp.client\\src\\app\\components\\todoelement\\todoelement.component.ts",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAwC0AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-06-04T21:55:43.299Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

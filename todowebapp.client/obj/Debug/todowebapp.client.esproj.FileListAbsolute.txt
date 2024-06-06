@@ -1,0 +1,1 @@
+C:\Git Repos\ToDoWebApp\todo-webapp\todowebapp.client\obj\Debug\todowebapp.client.esproj.CoreCompileInputs.cache
