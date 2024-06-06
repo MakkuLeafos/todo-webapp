@@ -4,19 +4,23 @@
   <table *ngIf="todoelements">
     <thead>
       <tr>
+        <th>ID</th>
         <th>Titel</th>
         <th>Beschreibung</th>
         <th>Fällig bis</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let todoelement of todoelements">
+        <td>{{ todoelement.toDoId}}</td>
         <td>{{ todoelement.toDoName}}</td>
         <td>{{ todoelement.toDoDescription}}</td>
         <td>{{ todoelement.toDoDueDate}}</td>
+        <td><button (click)="deleteToDoItem(todoelement.toDoId)">Löschen</button></td>
       </tr>
     </tbody>
   </table>
 
-  <button (click)="createNewToDo()">Neues To Do</button>
+  <button (click)="createNewToDoItem()">Neues To Do</button>
 </div>

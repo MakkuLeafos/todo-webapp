@@ -5,6 +5,8 @@
     { 
         List<ToDoElement> GetList();
         void AddToDoElement(ToDoElement newElement);
+
+        void DeleteToDoElement(int deletedItemId);
     }
 
     public class ToDoListService : IToDoListService
@@ -19,6 +21,10 @@
         public void AddToDoElement(ToDoElement newElement)
         {
             toDoList.Add(newElement);
+        }
+
+        public void DeleteToDoElement(int deletedItemId) {
+            toDoList.RemoveAll(item => item.ToDoId == deletedItemId);
         }
     }
 }

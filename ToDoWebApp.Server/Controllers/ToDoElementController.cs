@@ -22,38 +22,16 @@ namespace ToDoWebApp.Server.Controllers
             return _toDoListService.GetList();
         }
 
-        private void GenerateTestData()
-        {
-            if (_toDoListService.GetList() != null)
-            {
-                _toDoListService.AddToDoElement(new ToDoElement()
-                {
-                    ToDoName = "Task 1",
-                    ToDoDescription = "Task 1 Desc.",
-                    ToDoDueDate = DateTime.Now.ToString("dd.MM.yyyy")
-                }
-                );
-
-                _toDoListService.AddToDoElement(new ToDoElement()
-                {
-                    ToDoName = "Task 2",
-                    ToDoDescription = "",
-                    ToDoDueDate = DateTime.Now.ToString("dd.MM.yyyy")
-                }
-                );
-
-                _toDoListService.AddToDoElement(new ToDoElement()
-                {
-                    ToDoName = "Task 1",
-                    ToDoDescription = "Task 3 Desc."
-                }
-                );
-            }
-        }
         [HttpPost]
         public void Post([FromBody] ToDoElement newToDo)
         {
             _toDoListService.AddToDoElement(newToDo);
+        }
+
+        [HttpDelete("{deleteId}")]
+        public void DeleteItem(int deleteId)
+        {
+            _toDoListService.DeleteToDoElement(deleteId);
         }
     }
 }
