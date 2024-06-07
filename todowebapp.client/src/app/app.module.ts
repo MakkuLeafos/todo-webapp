@@ -15,6 +15,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { FormsModule } from '@angular/forms';
+import { MatCard, MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { FormsModule } from '@angular/forms';
     BrowserModule, HttpClientModule,
     AppRoutingModule, BrowserAnimationsModule,
     MatDialogModule, MatButtonModule,
-    MatFormFieldModule, MatInputModule, MatGridListModule,FormsModule,
+    MatFormFieldModule, MatInputModule,
+    MatGridListModule, FormsModule,
+    MatCardModule, MatIconModule,
   ],
   providers: [
     provideAnimationsAsync()

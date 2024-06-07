@@ -1,10 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
 import { MatDialog } from '@angular/material/dialog';
 import { CreatetododialogComponent } from '../dialogs/createtododialog/createtododialog.component';
 import { EdittododialogComponent } from '../dialogs/edittododialog/edittododialog.component';
-import { DIALOG_DATA } from '@angular/cdk/dialog';
 
 interface ToDoElement {
   toDoId: number;
@@ -28,7 +26,7 @@ export class TodoelementComponent implements OnInit {
   constructor(private http: HttpClient, public createToDoDialog: MatDialog, public editToDoDialog: MatDialog) { }
 
   ngOnInit() {
-    //this.getToDoElements();
+
   }
 
   //#region Dialogs
@@ -83,6 +81,9 @@ export class TodoelementComponent implements OnInit {
     this.http.get<ToDoElement[]>('/api/todoelement').subscribe(
       (result) => {
         this.todoelements = result
+        //this.todoelements.forEach(function (element) {
+        //  element.toDoDescription = element.toDoDescription.replace(/\n/g, "<br>");
+        //})
       },
       (error) => {
         console.error(error);
