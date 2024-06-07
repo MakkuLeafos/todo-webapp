@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>Neues To-Do-Element</h1>
+<div mat-dialog-content>
+  <mat-form-field appearance="outline">
+    <mat-label>Titel</mat-label>
+    <input matInput [(ngModel)]="title">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Beschreibung</mat-label>
+    <textarea matInput [(ngModel)]="description"></textarea>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-flat-button (click)="submit()">Erstellen</button>
+  <button mat-button mat-dialog-close>Schließen</button>
+</div>

@@ -7,7 +7,6 @@
         <th>ID</th>
         <th>Titel</th>
         <th>Beschreibung</th>
-        <th>Fällig bis</th>
         <th></th>
       </tr>
     </thead>
@@ -16,11 +15,11 @@
         <td>{{ todoelement.toDoId}}</td>
         <td>{{ todoelement.toDoName}}</td>
         <td>{{ todoelement.toDoDescription}}</td>
-        <td>{{ todoelement.toDoDueDate}}</td>
-        <td><button (click)="deleteToDoItem(todoelement.toDoId)">Löschen</button><button (click)="editToDoItem(todoelement.toDoId)">Bearbeiten</button></td>
+        <!--"editToDoItem(todoelement.toDoId)"-->
+        <td><button (click)="deleteToDoItem(todoelement.toDoId)">Löschen</button> <button (click)="openEditToDoDialog(todoelement.toDoId, todoelement.toDoName, todoelement.toDoDescription)">Bearbeiten</button></td>
       </tr>
     </tbody>
   </table>
 
-  <button (click)="createNewToDoItem()">Neues To Do</button>
+  <button (click)="openCreateToDoDialog()">Neues To Do</button>
 </div>
