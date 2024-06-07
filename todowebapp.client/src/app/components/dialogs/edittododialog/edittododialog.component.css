@@ -1,0 +1,10 @@
+.mat-mdc-dialog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  overflow: hidden;
+}
+
+.mat-form-field {
+  width: 100%;
+}
