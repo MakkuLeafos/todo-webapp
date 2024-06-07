@@ -1,7 +1,7 @@
 # todo-webapp
  Eine Web-App zur Verwaltung einer To-Do-Liste
 
-###Funktionen
+### Funktionen
 - Anlegen von To-Do-Listen-Einträgen
 - Bearbeiten von Einträgen
 - Löschen von Einträgen
