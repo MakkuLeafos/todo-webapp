@@ -1,16 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { MatDialog } from '@angular/material/dialog';
 import { CreatetododialogComponent } from '../dialogs/createtododialog/createtododialog.component';
 import { EdittododialogComponent } from '../dialogs/edittododialog/edittododialog.component';
 
-interface ToDoElement {
+export interface ToDoElement {
   toDoId: number;
   toDoName: string;
   toDoDescription: string;
 }
 
-var newToDoId: number = 1;
+var newToDoId: number;
 
 @Component({
   selector: 'app-todoelement',
@@ -25,9 +25,18 @@ export class TodoelementComponent implements OnInit {
 
   constructor(private http: HttpClient, public createToDoDialog: MatDialog, public editToDoDialog: MatDialog) { }
 
+  //#region Events
+  //Activates loading the page
   ngOnInit() {
-
+    this.loadData();
   }
+
+  //Activates when closing the page
+  @HostListener('window:beforeunload', ['$event'])
+  unloadHandler(event: Event) {
+    this.saveData();
+  }
+  //#endregion
 
   //#region Dialogs
 
@@ -50,7 +59,7 @@ export class TodoelementComponent implements OnInit {
 
   openEditToDoDialog(editID: number, toDoName: string, toDoDescription: string): void {
 
-    var updatedElement = <ToDoElement>{ toDoId: editID};
+    var updatedElement = <ToDoElement>{ toDoId: editID };
 
     const editToDoDialog = this.editToDoDialog.open(EdittododialogComponent, {
       data: { title: toDoName, description: toDoDescription }
@@ -81,9 +90,6 @@ export class TodoelementComponent implements OnInit {
     this.http.get<ToDoElement[]>('/api/todoelement').subscribe(
       (result) => {
         this.todoelements = result
-        //this.todoelements.forEach(function (element) {
-        //  element.toDoDescription = element.toDoDescription.replace(/\n/g, "<br>");
-        //})
       },
       (error) => {
         console.error(error);
@@ -100,7 +106,7 @@ export class TodoelementComponent implements OnInit {
     if (inputDescription == null) {
       inputDescription = "";
     }
-    var newElement = <ToDoElement>{ toDoId: newToDoId, toDoName: inputName, toDoDescription: inputDescription};
+    var newElement = <ToDoElement>{ toDoId: newToDoId, toDoName: inputName, toDoDescription: inputDescription };
 
     this.http.post<ToDoElement>('/api/todoelement', newElement).subscribe(
       (response: ToDoElement) => {
@@ -138,5 +144,37 @@ export class TodoelementComponent implements OnInit {
     );
   }
 
+  //#endregion
+
+  //#region Load and save data
+  loadData() {
+    const loadData = localStorage.getItem('toDoElements');
+
+    if (loadData) {
+      this.todoelements = JSON.parse(loadData);
+
+      this.todoelements.forEach((element) => {
+
+        this.http.post<ToDoElement>('/api/todoelement', element).subscribe(
+          (error) => {
+            console.error(error);
+          }
+        );
+      });
+
+      //Gets the highest ID of the loaded todoelements and increments it by 1. If there are no todoelements, then the ID starts with 1
+      var maxToDoId: number = this.todoelements.reduce((maxId, element) => {
+
+        return Math.max(maxId, element.toDoId);
+      }, 1);
+      newToDoId = maxToDoId;
+
+      this.getToDoElements();
+    }
+  }
+
+  saveData() {
+    localStorage.setItem('toDoElements', JSON.stringify(this.todoelements));
+  }
   //#endregion
 }

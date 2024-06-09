@@ -7,7 +7,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './components/root/app.component';
 import { TodoelementComponent } from './components/todoelement/todoelement.component';
-import { WeatherforecastComponent } from './components/weatherforecast/weatherforecast.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { CreatetododialogComponent } from './components/dialogs/createtododialog/createtododialog.component';
 import { EdittododialogComponent } from './components/dialogs/edittododialog/edittododialog.component';
@@ -22,7 +21,6 @@ import { MatIconModule } from '@angular/material/icon';
   declarations: [
     AppComponent,
     TodoelementComponent,
-    WeatherforecastComponent,
     CreatetododialogComponent,
     EdittododialogComponent
   ],
